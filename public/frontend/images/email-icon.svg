@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.256" height="58.019" viewBox="0 0 58.256 58.019">
+  <defs>
+    <filter id="Path_18953" x="0" y="0" width="58.256" height="58.019" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#0051da" flood-opacity="0.471"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="email-icon" transform="translate(-61.42 -29.649)">
+    <g id="Group_4742" data-name="Group 4742" transform="translate(80.42 39)">
+      <path id="Path_18952" data-name="Path 18952" d="M0,0H33.907V33.907H0Z" fill="none"/>
+      <g transform="matrix(1, 0, 0, 1, -19, -9.35)" filter="url(#Path_18953)">
+        <path id="Path_18953-2" data-name="Path 18953" d="M2.343,9.2,15.407,1.369a1.413,1.413,0,0,1,1.454,0L29.912,9.2a.706.706,0,0,1,.343.606V27.774a1.413,1.413,0,0,1-1.413,1.413H3.413A1.413,1.413,0,0,1,2,27.774V9.807A.706.706,0,0,1,2.343,9.2Zm22.75,1.964-8.879,7.684L7.152,11.157,5.324,13.31l10.907,9.261L26.941,13.3l-1.848-2.138Z" transform="translate(13 9.83)" fill="#0051da"/>
+      </g>
+    </g>
+  </g>
+</svg>

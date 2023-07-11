@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108.616" height="97.82" viewBox="0 0 108.616 97.82">
+  <g id="tick-mark_4_" data-name="tick-mark(4)" transform="translate(-0.134 -1.91)">
+    <g id="bg" transform="translate(0.134 1.91)">
+      <g id="Group_28755" data-name="Group 28755">
+        <path id="Path_19632" data-name="Path 19632" d="M105.828,57.979c-11.5-17.6-10.275-35.648-15.816-44.132S67.955-9.265,28.933,16.224s-29.1,53.2-23,62.526C34.471,122.439,126.192,89.156,105.828,57.979Z" transform="translate(-0.134 -1.91)" fill="#efefef"/>
+      </g>
+    </g>
+    <g id="color" transform="translate(20.245 16.622)">
+      <g id="Group_28756" data-name="Group 28756" transform="translate(0 0)">
+        <circle id="Ellipse_397" data-name="Ellipse 397" cx="34.198" cy="34.198" r="34.198" fill="#005bdf"/>
+      </g>
+      <g id="Group_28757" data-name="Group 28757" transform="translate(0 0)">
+        <path id="Path_19633" data-name="Path 19633" d="M13.59,40.948A34.2,34.2,0,0,1,44.368,6.923c-1.125-.112-2.265-.173-3.42-.173a34.2,34.2,0,1,0,0,68.4c1.155,0,2.3-.061,3.42-.173A34.2,34.2,0,0,1,13.59,40.948Z" transform="translate(-6.75 -6.75)" fill="#003889"/>
+      </g>
+      <g id="Group_28758" data-name="Group 28758" transform="translate(60.037 66.116)">
+        <path id="Path_19634" data-name="Path 19634" d="M31.06,37.62a4.56,4.56,0,1,1,4.56-4.56A4.565,4.565,0,0,1,31.06,37.62Zm0-6.08a1.52,1.52,0,1,0,1.52,1.52A1.52,1.52,0,0,0,31.06,31.54Z" transform="translate(-26.5 -28.5)" fill="#a4afc1"/>
+      </g>
+    </g>
+    <g id="regular" transform="translate(17.965 14.342)">
+      <g id="Group_28759" data-name="Group 28759">
+        <path id="Path_19635" data-name="Path 19635" d="M42.478,78.956A36.478,36.478,0,1,1,78.956,42.478,36.519,36.519,0,0,1,42.478,78.956Zm0-68.4A31.918,31.918,0,1,0,74.4,42.478,31.953,31.953,0,0,0,42.478,10.56Z" transform="translate(-6 -6)"/>
+      </g>
+      <g id="Group_28760" data-name="Group 28760" transform="translate(21.568 24.984)">
+        <path id="Path_19636" data-name="Path 19636" d="M24.586,37.872a2.262,2.262,0,0,1-1.611-.669l-9.879-9.879L16.32,24.1l8.268,8.268L42.736,14.219l3.225,3.225L26.2,37.2a2.286,2.286,0,0,1-1.617.669Z" transform="translate(-13.095 -14.219)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

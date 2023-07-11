@@ -1,0 +1,258 @@
+@extends('layouts.front')
+@section('content')
+<div class="warper">
+    <section class="list-banner-top blue-bg mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12  list-banner-top-L">
+                    <h3>{{ $service->title }}</h3>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">{{ $service->ParentSubcat->name ?? '' }}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ $service->name }}</li>
+                    </ol>
+                    <p>{{ $service->description }}.</p>
+                </div>
+                <div class="col-2 justify-content-end d-flex">
+                    {{--@if ($service->image)
+                    <img src="{{ url('Front/ListingPic/' . $service->image) }}" width="65" height="65">
+                    @else
+                    <img src="{{ URL::asset('Front/images/top-mob-app-box.png') }}">
+                    @endif--}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="firms-filters">
+    space comment
+
+    </section> -->
+    <!--firms-filters-end-->
+    <!--list-app-developers-->
+    <section class="app-developers-box">
+        <div class="container">
+            <h4 class="list-title">{{ $service->title }}</h4>
+            <ul class="app-developers-list mb-5">
+
+
+                @foreach ($datas as $companies)
+                <li class="d-flex justify-content-between mb-3">
+                    <div class="app-developers-list-L">
+                        <div class="app-developers-list-head d-flex justify-content-between align-items-center">
+                            <div class="app-dev-list-head-Left d-flex align-items-center">
+
+                                <figure><a href="{{ $companies->website }}">
+                                        @if ($companies->image_path)
+                                        <img src="{{ asset($companies->image_path) }} " width="65" height="65">@else<img
+                                            src="{{ asset('Front/images/featured-agencies-icon-1.svg ') }} " width="65"
+                                            height="65">
+                                        @endif
+                                    </a>
+                                </figure>
+                                <figcaption>
+                                    <a href="{{ $companies->website }}">
+                                        <h4>{{ $companies->company_name }}</h4>
+                                    </a>
+                                    {{-- <small>Web & App Software Development Company</small> --}}
+                                </figcaption>
+                            </div>
+                            <div class="app-dev-list-head-right">
+                                <span class="ratings-items"><img src="{{ asset('Front/images/star-rating-img.svg') }}">
+                                    {{ $company_reviews ?? '' }} </span>
+                                <small class="reviews-item d-flex align-items-center"> <a href="javascript;">5.0
+                                        reviews</a> <i class="ti ti-chevron-right"></i></small>
+                            </div>
+                        </div>
+                        <div class="app-developers-list-body mt-3">
+                            <ul class="app-mob-info d-flex">
+                                <li class="d-flex align-items-center">
+                                    <figure><i class="ti ti-users"></i></figure>
+                                    <figcaption>
+                                        <h5>Employees</h5>
+                                        <b>{{ $companies->employee_range }}</b>
+                                    </figcaption>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <figure><i class="ti ti-receipt-2"></i></figure>
+                                    <figcaption>
+                                        <h5>Hourly Rates</h5>
+                                        <b>Up to {{ $companies->cost_per_year }}</b>
+                                    </figcaption>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <figure><i class="ti ti-briefcase"></i></figure>
+                                    <figcaption>
+                                        <h5>Min. Project amount</h5>
+                                        <b>Less than - {{ $companies->project_amt }}</b>
+                                    </figcaption>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <figure><i class="ti ti-map-pin"></i></figure>
+                                    <figcaption>
+                                        <h5>Country</h5>
+                                        @if ($companies->location)
+                                        @php $newArray = []; @endphp
+
+                                        @foreach ($companies->location as $key=> $data)
+                                        @php $newArray[] = $data->countryDetails->name; @endphp
+                                        @endforeach
+
+                                        <?php $uniqueArray = array_unique($newArray);?>
+
+                                        <b>{{ (strlen(implode(',',$uniqueArray)) > 50) ? substr(implode(', ',
+                                            $uniqueArray),0,50).'...': implode(', ', $uniqueArray)}} </b>
+
+                                        @endif
+                                </li>
+                            </ul>
+                            <div class="app-mob-content mt-2">
+                                <p>{!! $companies->aboutus !!}......</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-developers-list-R d-flex  align-items-center justify-content-center">
+                        <a href="{{ $companies->website }}" class="btn red-bg-btn red-btn-hover">Visit Website</a>
+                        {{-- <a href="{{ route('profile_company', ['id' => $companies->permalink]) }}"
+                            class="btn black-btn-hover">View
+                            Profile</a> --}}
+                        @if($companies->permalink)
+                        <a href="{{ route('profile_company', ['id' => ($companies->permalink ?? '')]) }}"
+                            class="btn black-btn-hover">
+                            View Profile
+                        </a>
+
+                        @endif
+                        <a class="btn trans-btn bg-white-btn white-btn-hover">Contact Us</a>
+                    </div>
+                </li>
+                @endforeach
+            </ul>
+            <!-- -->
+            <div class="mb-3 navigation-box">
+                {{ $datas->links()}}
+            </div>
+
+        </div>
+    </section>
+
+</div>
+@endsection
+@section('customscript')
+<script>
+    $('.clear-all').on('click', function(e) {
+            $('.js-reset-filter select').each(function(a, e) {
+                e.selectedIndex = 0
+            })
+        })
+</script>
+
+    <script>
+        var anchors = document.querySelectorAll('a[href]');
+        Array.prototype.forEach.call(anchors, function(element, index) {
+            var urlC = element.href;
+            // var urlCpublic = element.href;
+           var replaceUrl = urlC.replace("/public", "");
+           //  alert(replaceUrl)
+
+            if (urlC.includes("topappfirms.co/developers")) {
+                element.href = urlC.replace("/developers", "");
+            }
+        });
+    </script>
+@endsection
+
+
+
+
+
+
+
+<!-- filter form need put space comment
+    <div class="container">
+            div class="firms-filters-head d-flex justify-content-between align-items-center mt-4">
+                <h3>{{ count($sub_data) }} Firms</h3>
+                <div class="sort-by-filters d-flex align-items-center">
+                    <label class="d-flex justify-content-center align-items-center">Sort by</label>
+                    <select class="form-control">
+                        <option>Rank</option>
+                    </select>
+                </div>
+            </div>
+
+            <br/>
+            <div class="all-filters d-flex justify-content-between align-items-center mb-4">
+
+                <form action="">
+                    @csrf
+                    <div class="all-filters-L d-flex js-reset-filter">
+                        <select class="form-control Location-select" name="company_address">
+                            <option value="" selected disabled>Location</option>
+                            @foreach ($sub_data as $companies)
+                            {{-- <option>{{$data->countryDetails->name}}</option> --}}
+                            @if ($companies->location)
+                            @foreach ($companies->location as $data)
+                            <option>{{ $data->countryDetails->name ?? '' }}</option>
+                            @endforeach
+                            @endif
+                            @endforeach
+                            {{-- <option>{{$sub_data->countryDetails->name}}</option> --}}
+                        </select>
+                        <select class="form-control" name="cost_per_year">
+                            <option>Hourly Rate</option>
+                            {{--@foreach ($sub_data as $data)
+                            <option value="{{trim($data->cost_per_year) ?? ''}}">Up to {{ $data->cost_per_year }}</option>
+                            @endforeach--}}
+                                <option value="" disabled>Please Select</option>
+                                 <option value="10-20">$ 10 - $ 20</option>
+                                 <option value="20-30">$ 20 - $ 30</option>
+                                 <option value="30-40">$ 30 - $ 40</option>
+                                 <option value="40-50">$ 40 - $ 50</option>
+                                 <option value="50-60">$ 50 - $ 60</option>
+                                 <option value="60-70">$ 60 - $ 70</option>
+                                 <option value="70-80">$ 70 - $ 80</option>
+                                 <option value="80-90">$ 80 - $ 90</option>
+                                 <option value="90-100">$ 90 - $ 100</option>
+
+                        </select>
+                        <select class="form-control" name="employee_range">
+                            <option>Employees</option>
+                            {{--@foreach ($sub_data as $data)
+                            <option value="{{ trim($data->employee_range) ?? ''}}">Up to {{ $data->employee_range }}</option>
+                            @endforeach--}}
+                                        <option value="">Please Select</option>
+                                 <option value="0-1">0-1 employees</option>
+                                 <option value="2-10">2-10 employees</option>
+                                 <option value="11-50">11-50 employees</option>
+                                 <option value="51-200">51-200 employees</option>
+                                 <option value="201-500">201-500 employees</option>
+                                 <option value="501-1000">501-1000 employees</option>
+                                 <option value="1001-5000">1001-5000 employees</option>
+                                 <option value="5001-10000">5001-10000 employees</option>
+                                 <option value="10001">10001+ employees</option>
+                        </select>
+                        <select class="form-control" name="reviews">
+                            <option value="ranking">All</option>
+                            <option value="latest">Latest</option>
+                            <option value="oldest">Oldest</option>
+                            {{-- <option>{{$rev->overall_rating}}</option> --}}
+                        </select>
+                        <input type="submit" value="Search" class="form-control">
+                    </div>
+                </form>
+
+                <div class="all-filters-R">
+                    <a class="clear-all" id="clear_all">Clear All <img src="images/close-icon.svg"></a>
+                </div>
+            </div>
+        </div>
+ -->
+
+ @section('customscript')
+    <script>
+        $('.clear-all').on('click', function(e) {
+            $('.js-reset-filter select').each(function(a, e) {
+                e.selectedIndex = 0
+            })
+        })
+    </script>
+@endsection

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="63" viewBox="0 0 63 63">
+  <defs>
+    <filter id="Ellipse_8" x="0" y="0" width="63" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="instagram" transform="translate(-1106 -3968)">
+    <g id="Group_46" data-name="Group 46" transform="translate(1115 3974)">
+      <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_8)">
+        <circle id="Ellipse_8-2" data-name="Ellipse 8" cx="22.5" cy="22.5" r="22.5" transform="translate(9 6)" fill="#5851db"/>
+      </g>
+    </g>
+    <g id="_2111491" data-name="2111491" transform="translate(1126 3983.999)">
+      <path id="Path_10" data-name="Path 10" d="M12,5.838A6.158,6.158,0,1,0,18.162,12,6.157,6.157,0,0,0,12,5.838Zm0,10.155a4,4,0,1,1,4-4A4,4,0,0,1,12,15.993Z" fill="#fff"/>
+      <path id="Path_11" data-name="Path 11" d="M16.948.076c-2.208-.1-7.677-.1-9.887,0A7.172,7.172,0,0,0,2.025,2.017C-.283,4.325.012,7.435.012,12c0,4.668-.26,7.706,2.013,9.979C4.342,24.291,7.5,23.988,12,23.988c4.624,0,6.22,0,7.855-.63,2.223-.863,3.9-2.85,4.065-6.419.1-2.209.1-7.677,0-9.887-.2-4.213-2.459-6.768-6.976-6.976Zm3.5,20.372c-1.513,1.513-3.612,1.378-8.468,1.378-5,0-7.005.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453,0-5.525-.567-9.5,4.978-9.788,1.274-.045,1.649-.06,4.856-.06l.045.03c5.329,0,9.51-.558,9.761,4.986.057,1.265.07,1.645.07,4.847,0,4.942.093,6.959-1.394,8.453Z" fill="#fff"/>
+      <circle id="Ellipse_14" data-name="Ellipse 14" cx="1.439" cy="1.439" r="1.439" transform="translate(16.967 4.156)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

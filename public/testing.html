@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+	<script type="text/javascript">
+		/*window.onload = function() {
+			window.location.href = "stylhawk://stylhawk/product/2";
+};*/
+(function() {
+  var app = {
+    launchApp: function() {
+      window.location.replace("stylhawk://stylhawk/product/2");
+      this.timer = setTimeout(this.openWebApp, 1000);
+    },
+
+    openWebApp: function() {
+      window.location.replace("http://itunesstorelink/");
+    }
+  };
+
+  app.launchApp();
+})();
+	</script>
+</html>

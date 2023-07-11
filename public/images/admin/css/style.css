@@ -1,0 +1,178 @@
+/*navbar style*/
+.navbar-brand-box { min-width: 240px; }
+    .vertical-collpsed .navbar-brand-box { min-width: 70px; }
+.check-li-main { list-style: none; }
+.check-li-main ul li { margin-left: 20px;list-style: none; }
+.check-li-main > li { border-bottom: 1px solid #ccc;padding: 10px 0px; }
+.childli li {
+    margin-left: 25% !important;
+}
+/*datatable pagination*/
+/*.dataTables_info {
+    float: right;
+}*/
+.datatable td {
+  overflow: hidden; /* this is what fixes the expansion */
+  text-overflow: ellipsis; /* not supported in all browsers, but I accepted the tradeoff */
+  white-space: nowrap;
+}
+body[data-sidebar="dark"] .logo-light {
+  max-width: 80%;
+  padding-top: 10px;
+}
+.logo {
+  line-height: 70px;
+  max-width: 50%;
+  margin-top: 8px;
+}
+table.dataTable.nowrap th, table.dataTable.nowrap td {
+  vertical-align: middle;
+}
+#sidebar-menu ul li a {padding: .625rem 15px;}
+.menu-title {
+  padding: 12px 15px !important;}
+body[data-sidebar="dark"] #sidebar-menu ul li a {
+    color: #8590a5;
+    padding: .625rem 15px;
+}
+.btn-danger {height: 38px;}
+.btn-primary{height: 38px;}
+.row.card-title-desc .form-group.mb-0.col-5{flex: 0 0 71.66667%;max-width: 71.667%;}
+.row.card-title-desc .col-2.btn.btn-primary{flex: 0 0 auto;max-width: fit-content;}
+.logo {
+  line-height: 42px !important;
+  margin-top: 2px;
+}
+
+.range-filter {
+  padding-left: 178px;
+}
+
+.pagination{
+justify-content: right;
+}
+
+
+
+@media (max-width: 991px){
+   .logo.logo-light .logo-lg{display: none !important;}
+   body[data-sidebar="dark"] .logo-light {padding-top: 10px;}
+   .btn.btn-secondary.buttons-collection.dropdown-toggle.buttons-colvis{height: 29px;line-height: 12px;}
+   .row.card-title-desc p.col-2 {flex: 0 0 50%;max-width: 50%;}
+   .row.card-title-desc .text-center.col-3 {flex: 0 0 50%;max-width: 50%;margin-bottom: 10px;text-align: right !important;}
+}
+@media (max-width: 767px){
+  .row.card-title-desc .form-group.mb-0.col-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .row.card-title-desc .col-2.btn.btn-primary {
+    flex: 0 0 auto;
+    max-width: fit-content;
+    margin-top: 15px;
+  }
+  .page-link {font-size: 14px;}
+  .card-body{overflow: auto;}
+  .row.card-title-desc p.col-5 {flex: 0 0 100%;max-width: 100%;}
+  .row.card-title-desc p.col-3 {flex: 0 0 100%;max-width: 100%;}
+  .row.card-title-desc p.col-6 {flex: 0 0 100%;max-width: 100%;}
+  .row.card-title-desc .form-group.mb-0.col-7 {flex: 0 0 100%;max-width: 100%;}
+  .form-group.mb-0.col-9{flex: 0 0 100%;max-width: 100%;}
+  .form-group.mb-0.col-6{flex: 0 0 100%;max-width: 100%;}
+  .form-group.mb-0.col-8{flex: 0 0 100%;max-width: 100%;}
+  .col-md-1{margin-bottom: 10px;}
+
+  
+  }
+  @media (max-width: 576px){
+    .row.card-title-desc .form-group.mb-0.col-5 form .row .col-3{flex: 0 0 100%;max-width: 100%;}
+    .row.card-title-desc .form-group.mb-0.col-5 form .row .col-6{flex: 0 0 100%;max-width: 100%;}
+    .row.card-title-desc .col-2.btn.btn-primary {
+      flex: 0 0 auto;
+      max-width: fit-content;
+      margin-top: 15px;
+      margin-left: 13px;
+    }
+    div.dataTables_wrapper div.dataTables_filter input {
+      width: 85%;
+    }
+    div.dataTables_wrapper div.dataTables_filter label {width: 100%;}
+    .row.card-title-desc .form-group.mb-0.col-7 form .row .col-3{flex: 0 0 100%;max-width: 100%;margin-bottom: 5px;}
+    .row.card-title-desc .form-group.mb-0.col-7 form .row .input-daterange.input-group.col-6{flex: 0 0 100%;max-width: 100%;}
+    .form-group.mb-0.col-9 form .row .col-3{flex: 0 0 100%;max-width: 100%;}
+    .form-group.mb-0.col-9 form .row .input-daterange.input-group.col-6{flex: 0 0 100%;max-width: 100%;}
+    .form-group.mb-0.col-6 form .row .col-3{flex: 0 0 100%;max-width: 100%;}
+    .form-group.mb-0.col-6 form .row .input-daterange.input-group.col-6{flex: 0 0 100%;max-width: 100%;}
+    .form-group.mb-0.col-8 form .row .col-3{flex: 0 0 100%;max-width: 100%;}
+    .form-group.mb-0.col-8 form .row .input-daterange.input-group.col-6{flex: 0 0 100%;max-width: 100%;}
+    .form-group.mb-0.col-10 form .row .col-3{flex: 0 0 100%;max-width: 100%;}
+    .form-group.mb-0.col-10 form .row .input-daterange.input-group.col-6{flex: 0 0 100%;max-width: 100%;}
+    .row.card-title-desc p.col-4 {flex: 0 0 100%;max-width: 100%;}
+    .form-group.mb-0.col-10 {flex: 0 0 100%;max-width: 100%;}
+    .col-2.btn.btn-danger.mr-2{flex: 0 0 95%;max-width: 95%;margin: auto !important;margin-top: 5px !important;}
+    .form-control.col-6.mr-2 {
+      flex: 0 0 96%;
+      max-width: 96%;
+      margin: auto !important;
+      margin-bottom: 5px !important;
+    }
+    #rangeForm .col-2.btn.btn-danger{margin-left: 10px;}
+    .form-group.mb-0.col-10 .form-control.col-3.mr-1{flex: 0 0 48%;max-width: 48%;margin-bottom: 10px;}
+    .row.card-title-desc .col-2.btn.btn-primary {
+      max-width: 95%;
+      margin: auto !important;
+      margin-top: 5px !important;
+    }
+    .main-content-body.tab-pane.p-4.border-top-0.active{padding: 0.5rem !important;}
+    .h1, h1 {font-size: 1.25rem;}
+    
+  }
+
+    @media (max-width: 379px){
+    .btn.btn-secondary.buttons-collection.dropdown-toggle.buttons-colvis {
+      line-height: 12px;
+      font-size: 12px;
+    }
+    .row.card-title-desc .form-group.mb-0.col-5 form .row .col-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    .col-2.btn.btn-danger.mr-2 {
+      flex: 0 0 92%;
+      max-width: 92%;
+      margin: auto !important;}
+    .row.card-title-desc .col-2.btn.btn-primary {
+        flex: 0 0 auto;
+        max-width: 92%;
+        margin-top: 10px;
+      }
+      div.dataTables_wrapper div.dataTables_filter input {
+        width: 80%;
+      }
+      .row.card-title-desc .form-group.mb-0.col-7 form .row .input-daterange.input-group.col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+      .form-group.mb-0.col-9 form .row .input-daterange.input-group.col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+      .form-group.mb-0.col-6 form .row .input-daterange.input-group.col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+      .col-2.btn.btn-danger.mr-2{margin-top: 5px !important;}
+      #rangeForm .col-2.btn.btn-danger {
+        margin-left: 8px;
+        width: 100%;
+        max-width: 95%;
+        flex: 0 0 95%;
+      }
+      .form-group.mb-0.col-10 .form-control.col-3.mr-1{flex: 0 0 98%;max-width: 98%;margin-bottom: 10px;}
+      .row.card-title-desc .col-2.btn.btn-primary {flex: 0 0 auto;max-width: 95%;}
+      .card-body {padding:15px !important;}
+   }
